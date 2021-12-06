@@ -1,5 +1,6 @@
 import styled, {css} from 'styled-components';
 import Navbar from './components/Navbar';
+import Feature from './pages/Feature';
 import Intro from './pages/Intro';
 
 
@@ -10,6 +11,10 @@ const App = () => {
         <Navbar />
         <Intro />
         <IntroShape />
+    </Container>
+    <Container>
+      <Feature />
+      <FeatureShape />
     </Container>
   </>
   )
