@@ -9,7 +9,7 @@ const Navbar = () => {
         <Container>
             <Wrapper>
                 <Left>
-                    <Logo>Agency</Logo>
+                    <Logo>Agensy</Logo>
                     <Menu>
                         <MenuItem>Home</MenuItem>
                         <MenuItem>Features</MenuItem>
