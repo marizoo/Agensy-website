@@ -2,9 +2,13 @@ import styled, {css} from 'styled-components';
 import Navbar from './components/Navbar';
 import Feature from './pages/Feature';
 import Intro from './pages/Intro';
+import Price from './pages/Price';
+import Service from './pages/Service';
 
 
 const App = () => {
+  const smallScreen = window.screen.width <= 480 ? true : false;
+
   return (
     <>
     <Container>
@@ -15,6 +19,14 @@ const App = () => {
     <Container>
       <Feature />
       <FeatureShape />
+    </Container>
+    <Container>
+      <Service />
+      {!smallScreen && <ServiceShape />}
+    </Container>
+    <Container>
+      <Price />
+      <PriceShape />
     </Container>
   </>
   )
