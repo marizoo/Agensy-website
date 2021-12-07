@@ -1,5 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
+import Map from '../img/map.png'
+import Phone from '../img/phone.png'
+import Send from '../img/send.png'
 
 const Contact = () => {
     return (
@@ -7,7 +10,7 @@ const Contact = () => {
             <Wrapper>
                 <FormContainer>
                     <Title>
-                        Questions? <br/> LEt's Get In Touch
+                        Questions? <br/> Let's Get In Touch
                     </Title>
                     <Form>
                         <LeftForm>
@@ -47,6 +50,9 @@ export default Contact
 const Container = styled.div`
 height: 90%;
 background: url("https://www.toptal.com/designers/subtlepatterns/patterns/double-bubble-outline.png");
+@media only screen and (max-width: 480px){
+height: 85%;
+}
 `
 
 const Wrapper = styled.div`
@@ -57,6 +63,7 @@ align-items: center;
 justify-content: center;
 @media only screen and (max-width: 480px){
     flex-direction: column;
+    padding: 10px;
 }
 `
 
@@ -67,15 +74,16 @@ width: 50%;
 }
 `
 
-const Title = styled.div`
+const Title = styled.h1`
 margin: 50px;
-margin-top: 0;
+margin-left: 160px;
 @media only screen and (max-width: 480px) {
+margin-left: 0;
 margin: 20px;
 }
 `
 
-const Form = styled.div`
+const Form = styled.form`
 height: 250px;
 display: flex;
 align-items: center;
@@ -97,35 +105,85 @@ margin-right: 20px;
 }
 `
 
-const Input = styled.div`
-
+const Input = styled.input`
+width: 200px;
+padding: 20px;
+@media only screen and (max-width: 480px) {
+    padding: 5px;
+}
 `
 
 const RightForm = styled.div`
-
+height: 100%;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+@media only screen and (max-width: 480px) {
+    height: 50%;
+}
 `
 
-const TextArea = styled.div`
-
+const TextArea = styled.textarea`
+width: 200px;
+height: 60%;
+padding: 20px;
+@media only screen and (max-width: 480px) {
+    padding: 5px;
+    margin-top: 20px;
+}
 `
 
-const Button = styled.div`
-
+const Button = styled.button`
+border: none;
+padding: 15px;
+background-color: darkblue;
+color: white;
+font-size: 20px;
+border-radius: 10px;
+margin-top: 20px;
+cursor: pointer;
+@media only screen and (max-width: 480px) {
+    padding: 5px;
+    font-size: 14px;
+}
 `
 
 const AddressContainer = styled.div`
-
+width: 50%;
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+@media only screen and (max-width: 480px) {
+    width: 100%;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: center;
+}
 `
 
 const AddressItem = styled.div`
-
+display: flex;
+align-items: center;
+margin-bottom: 50px;
+@media only screen and (wax-width: 480px) {
+    margin-bottom: 10px;
+}
 `
 
-const Icon = styled.div`
-
+const Icon = styled.img`
+width: 20px;
+margin-right: 25px;
+@media only screen and (max-width: 480px) {
+    width: 15px;
+}
 `
 
-const Text = styled.div`
-
+const Text = styled.span`
+font-size: 20px;
+margin-right: 15px;
+color: #5c5c5c;
+@media only screen and (max-width:480px) {
+    font-size: 14px;
+}
 `
 

@@ -1,5 +1,7 @@
 import styled, {css} from 'styled-components';
+import Footer from './components/Footer';
 import Navbar from './components/Navbar';
+import Contact from './pages/Contact';
 import Feature from './pages/Feature';
 import Intro from './pages/Intro';
 import Price from './pages/Price';
@@ -27,6 +29,10 @@ const App = () => {
     <Container>
       <Price />
       <PriceShape />
+    </Container>
+    <Container>
+      <Contact />
+      <Footer />
     </Container>
   </>
   )
